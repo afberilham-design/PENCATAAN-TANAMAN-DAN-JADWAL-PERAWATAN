@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laporan - PlantCare</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">🌿</div>
+        <h2>PlantCare</h2>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-link" href="dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+        <a class="nav-link" href="kategori.html"><span class="nav-icon">🗂️</span> Kategori</a>
+        <a class="nav-link" href="transaksi.html"><span class="nav-icon">📝</span> Transaksi</a>
+        <a class="nav-link active" href="laporan.html"><span class="nav-icon">📈</span> Laporan</a>
+        <a class="nav-link" href="login.html"><span class="nav-icon">🚪</span> Logout</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-title">
+          <h1>Laporan</h1>
+          <p>Analisis perawatan tanaman dan performa</p>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="btn secondary">Export PDF</button>
+        </div>
+      </div>
+
+      <div class="large-card">
+        <div class="card-header">
+          <h3>Ringkasan Kinerja</h3>
+          <span class="filter-tag">Periode 2026</span>
+        </div>
+
+        <div class="report-box">
+          <div class="mini-box">
+            <h4>Jumlah perawatan</h4>
+            <strong>320</strong>
+          </div>
+
+          <div class="mini-box">
+            <h4>Tanaman sehat</h4>
+            <strong>92%</strong>
+          </div>
+
+          <div class="mini-box">
+            <h4>Biaya pupuk</h4>
+            <strong>Rp 1.8M</strong>
+          </div>
+
+          <div class="mini-box">
+            <h4>Jadwal tertinggal</h4>
+            <strong>14</strong>
+          </div>
+        </div>
+
+        <div class="bar-chart" style="margin-top: 28px; height: 220px;">
+          <div class="bar-group">
+            <div class="bar" style="height: 40%;"></div>
+            <div class="bar-label">Jan</div>
+          </div>
+          <div class="bar-group">
+            <div class="bar" style="height: 58%;"></div>
+            <div class="bar-label">Feb</div>
+          </div>
+          <div class="bar-group">
+            <div class="bar" style="height: 66%;"></div>
+            <div class="bar-label">Mar</div>
+          </div>
+          <div class="bar-group">
+            <div class="bar" style="height: 78%;"></div>
+            <div class="bar-label">Apr</div>
+          </div>
+          <div class="bar-group">
+            <div class="bar" style="height: 88%;"></div>
+            <div class="bar-label">Mei</div>
+          </div>
+          <div class="bar-group">
+            <div class="bar" style="height: 92%;"></div>
+            <div class="bar-label">Jun</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
