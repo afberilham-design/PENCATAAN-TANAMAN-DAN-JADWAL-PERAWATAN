@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kategori - PlantCare</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">🌿</div>
+        <h2>PlantCare</h2>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-link" href="dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+        <a class="nav-link active" href="kategori.html"><span class="nav-icon">🗂️</span> Kategori</a>
+        <a class="nav-link" href="transaksi.html"><span class="nav-icon">📝</span> Transaksi</a>
+        <a class="nav-link" href="laporan.html"><span class="nav-icon">📈</span> Laporan</a>
+        <a class="nav-link" href="login.html"><span class="nav-icon">🚪</span> Logout</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-title">
+          <h1>Kategori</h1>
+          <p>Kelola jenis tanaman dan kebutuhan perawatannya</p>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="btn primary">+ Tambah Kategori</button>
+        </div>
+      </div>
+
+      <div class="large-card">
+        <div class="action-row">
+          <h3>Daftar Kategori</h3>
+          <div class="filter-tag">12 kategori</div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Nama Kategori</th>
+                <th>Jenis Tanaman</th>
+                <th>Frekuensi</th>
+                <th>Status</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Tanaman Hias</td>
+                <td>Anggrek</td>
+                <td>3x / minggu</td>
+                <td><span class="badge success">Aktif</span></td>
+                <td>✏️ 🗑️</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Tanaman Obat</td>
+                <td>Jahe</td>
+                <td>2x / minggu</td>
+                <td><span class="badge success">Aktif</span></td>
+                <td>✏️ 🗑️</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Tanaman Buah</td>
+                <td>Tomat</td>
+                <td>4x / minggu</td>
+                <td><span class="badge warning">Perlu cek</span></td>
+                <td>✏️ 🗑️</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Tanaman Indoor</td>
+                <td>Sansevieria</td>
+                <td>1x / minggu</td>
+                <td><span class="badge success">Aktif</span></td>
+                <td>✏️ 🗑️</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
