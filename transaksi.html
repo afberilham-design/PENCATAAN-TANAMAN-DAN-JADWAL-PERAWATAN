@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transaksi - PlantCare</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">🌿</div>
+        <h2>PlantCare</h2>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-link" href="dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+        <a class="nav-link" href="kategori.html"><span class="nav-icon">🗂️</span> Kategori</a>
+        <a class="nav-link active" href="transaksi.html"><span class="nav-icon">📝</span> Transaksi</a>
+        <a class="nav-link" href="laporan.html"><span class="nav-icon">📈</span> Laporan</a>
+        <a class="nav-link" href="login.html"><span class="nav-icon">🚪</span> Logout</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-title">
+          <h1>Transaksi</h1>
+          <p>Catatan kegiatan perawatan tanaman</p>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="btn primary">+ Buat Transaksi</button>
+        </div>
+      </div>
+
+      <div class="large-card">
+        <div class="action-row">
+          <h3>Riwayat Perawatan</h3>
+          <div class="filter-tag">Bulan ini</div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Tanaman</th>
+                <th>Kategori</th>
+                <th>Tanggal</th>
+                <th>Jenis</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TRX-001</td>
+                <td>Anggrek Putih</td>
+                <td>Tanaman Hias</td>
+                <td>10 Okt 2026</td>
+                <td>Penyiraman</td>
+                <td><span class="badge success">Selesai</span></td>
+              </tr>
+              <tr>
+                <td>TRX-002</td>
+                <td>Tomat Ceri</td>
+                <td>Tanaman Buah</td>
+                <td>11 Okt 2026</td>
+                <td>Pemupukan</td>
+                <td><span class="badge warning">Proses</span></td>
+              </tr>
+              <tr>
+                <td>TRX-003</td>
+                <td>Jahe Merah</td>
+                <td>Tanaman Obat</td>
+                <td>12 Okt 2026</td>
+                <td>Perawatan Akar</td>
+                <td><span class="badge success">Selesai</span></td>
+              </tr>
+              <tr>
+                <td>TRX-004</td>
+                <td>Melati</td>
+                <td>Tanaman Hias</td>
+                <td>13 Okt 2026</td>
+                <td>Pemangkasan</td>
+                <td><span class="badge danger">Tertunda</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
