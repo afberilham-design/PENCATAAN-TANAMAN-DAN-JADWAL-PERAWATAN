@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - PlantCare</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">🌿</div>
+        <h2>PlantCare</h2>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-link active" href="dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+        <a class="nav-link" href="kategori.html"><span class="nav-icon">🗂️</span> Kategori</a>
+        <a class="nav-link" href="transaksi.html"><span class="nav-icon">📝</span> Transaksi</a>
+        <a class="nav-link" href="laporan.html"><span class="nav-icon">📈</span> Laporan</a>
+        <a class="nav-link" href="login.html"><span class="nav-icon">🚪</span> Logout</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <p style="color: rgba(255,255,255,0.8); margin-bottom: 8px;">Status kebun</p>
+        <strong style="font-size: 1.2rem;">78%</strong>
+        <div style="margin-top: 8px; color: rgba(255,255,255,0.8); font-size: 0.85rem;">Kondisi tanaman sehat</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-title">
+          <h1>Dashboard</h1>
+          <p>Ringkasan aktivitas tanaman hari ini</p>
+        </div>
+
+        <div class="topbar-actions">
+          <div class="search-box">🔎 Cari tanaman...</div>
+          <div class="user-pill">
+            <div class="avatar">A</div>
+            <span>Admin</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-grid">
+        <div class="card stat-card">
+          <div>
+            <div class="stat-label">Tanaman aktif</div>
+            <div class="stat-value">128</div>
+          </div>
+          <div class="stat-icon">🌱</div>
+        </div>
+
+        <div class="card stat-card">
+          <div>
+            <div class="stat-label">Jadwal hari ini</div>
+            <div class="stat-value">24</div>
+          </div>
+          <div class="stat-icon">🗓️</div>
+        </div>
+
+        <div class="card stat-card">
+          <div>
+            <div class="stat-label">Perawatan tertunda</div>
+            <div class="stat-value">12</div>
+          </div>
+          <div class="stat-icon">⏳</div>
+        </div>
+
+        <div class="card stat-card">
+          <div>
+            <div class="stat-label">Kondisi sehat</div>
+            <div class="stat-value">92%</div>
+          </div>
+          <div class="stat-icon">✅</div>
+        </div>
+      </div>
+
+      <div class="section-row">
+        <div class="large-card">
+          <div class="card-header">
+            <h3>Perawatan per bulan</h3>
+            <span class="filter-tag">2026</span>
+          </div>
+
+          <div class="bar-chart">
+            <div class="bar-group">
+              <div class="bar" style="height: 55%;"></div>
+              <div class="bar-label">Jan</div>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 68%;"></div>
+              <div class="bar-label">Feb</div>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 72%;"></div>
+              <div class="bar-label">Mar</div>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 80%;"></div>
+              <div class="bar-label">Apr</div>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 90%;"></div>
+              <div class="bar-label">Mei</div>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 76%;"></div>
+              <div class="bar-label">Jun</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="large-card">
+          <div class="card-header">
+            <h3>Jadwal hari ini</h3>
+          </div>
+
+          <div class="todo-list">
+            <div class="todo-item">
+              <div class="todo-info">
+                <strong>Penyiraman Mawar</strong>
+                <div class="todo-meta">08:00 AM</div>
+              </div>
+              <span class="badge success">Selesai</span>
+            </div>
+
+            <div class="todo-item">
+              <div class="todo-info">
+                <strong>Pemupukan Melati</strong>
+                <div class="todo-meta">10:30 AM</div>
+              </div>
+              <span class="badge warning">Menunggu</span>
+            </div>
+
+            <div class="todo-item">
+              <div class="todo-info">
+                <strong>Pembersihan Daun</strong>
+                <div class="todo-meta">13:00 PM</div>
+              </div>
+              <span class="badge danger">Tertunda</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
